@@ -14,21 +14,13 @@ RUN apt-get update && \
 RUN python3 --version
 RUN pip3 --version
 
-# set the working directory for containers
-
-# Installing python dependencies
-COPY requirements.txt requirements.txt
-
-RUN pip install --no-cache-dir -r requirements.txt
-
 RUN cd /home
 
+RUN git clone https://github.com/Bashirkazimi/yelp.git
 
-# Copy all the files from the project’s root to the working directory
-# COPY src/ /src/
-# RUN ls -la /src/*
+RUN cd /yelp
 
-RUN git clone https://github.com/Bashirkazimi/BashirLearning.git
+COPY user_based_recommender_nn files/user_based_recommender_nn
+COPY item_based_recommender_nn files/item_based_recommender_nn
 
-# Running Python Application
-# CMD ["python3", "/src/main.py"]
+RUN pip install --no-cache-dir -r requirements.txt
