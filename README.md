@@ -18,9 +18,9 @@ There are two files names:
 
 that should be downloaded and put under `files` directory
 
-If you don't want to clone the repo locally, you could download the Dockerfile in this repository and build a docker image. The dockerfile automatically installs necessary libraries and clones this repository. 
+If you don't want to clone the repo locally, you could download the `Dockerfile` and the `requirements.txt` in this repository and build a docker image. The dockerfile automatically installs necessary libraries and clones this repository. 
 
-Having downloaded the Dockerfile in a local empty directory (along with the downloaded model files), build a docker image using:
+Having downloaded the `Dockerfile` and the `requirements.txt` in a local empty directory (along with the downloaded model files), build a docker image using:
 
 ```
 docker build -t <YOUR-CHOICE-OF-NAME>:<YOUR-CHOICE-OF-TAG> .
