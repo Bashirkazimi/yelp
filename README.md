@@ -12,6 +12,12 @@ pip install -r requirements.txt
 
 There are two pickled Machine Learning model files that are large, so to test this repo, please download them from [here](https://seafile.cloud.uni-hannover.de/d/26b531317733439b82b4/).
 
+There are two files names:
+- `user_based_recommender_nn`
+- `item_based_recommender_nn`
+
+that should be downloaded and put under `files` directory
+
 If you don't want to clone the repo locally, you could download the Dockerfile in this repository and build a docker image. The dockerfile automatically installs necessary libraries and clones this repository. 
 
 Having downloaded the Dockerfile in a local empty directory (along with the downloaded model files), build a docker image using:
