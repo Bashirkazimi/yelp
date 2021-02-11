@@ -54,6 +54,7 @@ It could be tested using the command:
 ```
 python predict_img_class.py --image=/path/to/image
 ```
+Example images are located in `files` directory.
 
 It will print out the category predicted for the given image. Additionally, it will open an image window showing the given image.
 
