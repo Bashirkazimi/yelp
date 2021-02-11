@@ -23,7 +23,7 @@ WORKDIR /yelp
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY user_based_recommender_nn /files/user_based_recommender_nn
-COPY item_based_recommender_nn /files/item_based_recommender_nn
+COPY user_based_recommender_nn /yelp/files/user_based_recommender_nn
+COPY item_based_recommender_nn /yelp/files/item_based_recommender_nn
 
 
