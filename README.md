@@ -91,3 +91,5 @@ python recommend_business.py
 It will ask the user to input a user ID (that exists in the dataset, small subset of it is included in `files/subsets.csv` ) and the business ID to score, it will predict possible rating score and give top recommendations to the user.
 
 
+Please let me know if there are any issues/mistakes you notice, Thanks.
+
