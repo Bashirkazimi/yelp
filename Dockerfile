@@ -14,17 +14,16 @@ RUN apt-get update && \
 RUN python3 --version
 RUN pip3 --version
 
-RUN cd /home
 
 RUN git clone https://github.com/Bashirkazimi/yelp.git
 
-RUN cd /yelp
+WORKDIR /yelp
 
-COPY requirements.txt requirements.txt
+#COPY requirements.txt requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY user_based_recommender_nn files/user_based_recommender_nn
-COPY item_based_recommender_nn files/item_based_recommender_nn
+COPY user_based_recommender_nn /files/user_based_recommender_nn
+COPY item_based_recommender_nn /files/item_based_recommender_nn
 
 
