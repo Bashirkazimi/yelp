@@ -20,6 +20,8 @@ RUN git clone https://github.com/Bashirkazimi/yelp.git
 
 RUN cd /yelp
 
+COPY requirements.txt requirements.txt
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY user_based_recommender_nn files/user_based_recommender_nn
